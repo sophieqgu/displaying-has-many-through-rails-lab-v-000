@@ -10,6 +10,6 @@ class DoctorsController < ApplicationController
   private
 
   def artist_params
-    params.require(:artist).permit(:name)
+    params.require(:doctor).permit(:name, :department)
   end
 end
