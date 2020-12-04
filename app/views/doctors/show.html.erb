@@ -1,0 +1,5 @@
+<bold><%= @doctor.name %></bold> from the <bold><%= @doctor.department %></bold> department has the following appointmnents:
+
+<% @doctor.appointments.each do |appointment| %>
+  <%= link_to appointment.patient.name, patient_path(apatient) %>
+<% end %>
